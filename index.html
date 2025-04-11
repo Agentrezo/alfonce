@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝐀𝐋𝐅𝐎𝐍𝐂𝐄 MK 𝗦𝗘𝗥𝗩𝗜𝗖𝗘𝗦</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mx-auto px-4 py-6">
+        <!-- Header with Title and Shopping Icon -->
+        <div class="title-container flex items-center justify-between mb-6">
+            <div class="flex items-center">
+                <div class="shopping-icon">
+                    <i class="fas fa-shopping-cart fa-lg"></i>
+                </div>
+                <div class="title-text">
+                    <span class="alfonce-text text-2xl font-bold">𝐀𝐋𝐅𝐎𝐍𝐂𝐄</span>
+                    <span class="services-text text-2xl font-bold">𝗦𝗘𝗥𝗩𝗜𝗖𝗘𝗦</span>
+                </div>
+            </div>
+            <button class="mobile-menu-button mx-3">
+                <i class="fas fa-bars"></i> Menu
+            </button>
+        </div>
+
+        <!-- Submenu/Navigation -->
+        <div class="submenu flex flex-wrap justify-center gap-4 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md mb-6">
+            <div class="tab" data-tab="home">
+                <i class="fas fa-home submenu-icon" style="color: var(--purple);"></i>
+                Home
+            </div>
+            <div class="tab" data-tab="notifications">
+                <i class="fas fa-bell submenu-icon" style="color: var(--green);"></i>
+                Notifications
+            </div>
+            <div class="tab" data-tab="orders">
+                <i class="fas fa-shopping-bag submenu-icon" style="color: var(--orange);"></i>
+                Submitted Orders
+            </div>
+            <div class="tab" data-tab="other-services">
+                <i class="fas fa-concierge-bell submenu-icon" style="color: var(--purple);"></i>
+                Other Services
+            </div>
+            <div class="tab" data-tab="developer">
+                <i class="fas fa-code submenu-icon" style="color: var(--dark-red);"></i>
+                Developer
+            </div>
+            <div class="tab" data-tab="admin">
+                <i class="fas fa-user-shield submenu-icon" style="color: var(--green);"></i>
+                Admin Panel
+            </div>
+            <div class="tab" data-tab="owner">
+                <i class="fas fa-crown submenu-icon" style="color: var(--orange);"></i>
+                Owner Panel
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <!-- Home Tab (Default View) -->
+            <div class="tab-content active" id="home-content">
+                <!-- Slideshow -->
+                <div class="slide-container mb-8">
+                    <div class="slides">
+                        <!-- Slides will be inserted here via JavaScript -->
+                    </div>
+                    <div class="slide-text">Best university products and services in UDOM</div>
+                </div>
+
+                <!-- Services Section Title -->
+                <div class="services-title-container mb-6">
+                    <h2 class="text-2xl font-bold" style="color: var(--purple);">ՏᗴᖇᐯIᑕᗴՏ</h2>
+                    <p class="text-lg font-semibold" style="color: var(--orange);">[ 𝐅𝐑𝐄𝐄 𝐃𝐄𝐋𝐈𝐕𝐄𝐑𝐘 ]</p>
+                </div>
+
+                <!-- Services Grid -->
+                <div class="services-grid">
+                    <!-- Drawing Boards -->
+                    <div class="service-container">
+                        <div class="service-image">
+                            <div class="service-slides" data-service="drawing-boards">
+                                <!-- Service slides will be inserted here via JavaScript -->
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-title">𝗗𝗥𝗔𝗪𝗜𝗡𝗚 𝗕𝗢𝗔𝗥𝗗𝗦:</div>
+                            <div class="service-items">
+                                ▪drawing boards<br>
+                                ▪2H & 4H pencils<br>
+                                ▪mechanical pencil<br>
+                                ▪30 & 45 degree set square<br>
+                                ▪360 degree protractor<br>
+                                ▪T-square<br>
+                                ▪Compass<br>
+                                ▪french curves
+                            </div>
+                            <div class="service-button" onclick="openOrderForm('Drawing Board')">SELECT</div>
+                        </div>
+                    </div>
+
+                    <!-- Mathematical Set -->
+                    <div class="service-container">
+                        <div class="service-image">
+                            <div class="service-slides" data-service="mathematical-set">
+                                <!-- Service slides will be inserted here via JavaScript -->
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-title">𝗠𝗔𝗧𝗛𝗘𝗠𝗔𝗧𝗜𝗖𝗔𝗟 𝗦𝗘𝗧:</div>
+                            <div class="service-items">
+                                ▪protractor<br>
+                                ▪ruler<br>
+                                ▪set square<br>
+                                ▪compass<br>
+                                ▪divider<br>
+                                ▪eraser<br>
+                                ▪pencil
+                            </div>
+                            <div class="service-button" onclick="openOrderForm('Mathematical Set')">SELECT</div>
+                        </div>
+                    </div>
+
+                    <!-- Routers -->
+                    <div class="service-container">
+                        <div class="service-image">
+                            <div class="service-slides" data-service="routers">
+                                <!-- Service slides will be inserted here via JavaScript -->
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-title">𝗥𝗢𝗨𝗧𝗘𝗥𝗦:</div>
+                            <div class="service-items">
+                                ▪vodacom router<br>
+                                ▪airtel router<br>
+                                ▪yas router<br>
+                                ▪pocket wi-fi (airtel)
+                            </div>
+                            <div class="service-button" onclick="openOrderForm('Router')">SELECT</div>
+                        </div>
+                    </div>
+
+                    <!-- SIM Card Registration -->
+                    <div class="service-container">
+                        <div class="service-image">
+                            <div class="service-slides" data-service="sim-cards">
+                                <!-- Service slides will be inserted here via JavaScript -->
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-title">𝗦𝗜𝗠 𝗖𝗔𝗥𝗗 𝗥𝗘𝗚𝗜𝗦𝗧𝗥𝗔𝗧𝗜𝗢𝗡:</div>
+                            <div class="service-items">
+                                ▪vodacom<br>
+                                ▪airtel<br>
+                                ▪yas<br>
+                                ▪halotel
+                            </div>
+                            <div class="service-button" onclick="openOrderForm('SIM Card')">SELECT</div>
+                        </div>
+                    </div>
+
+                    <!-- SME Bundles Menu -->
+                    <div class="service-container">
+                        <div class="service-image">
+                            <div class="service-slides" data-service="sme-bundles">
+                                <!-- Service slides will be inserted here via JavaScript -->
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-title">𝗦𝗠𝗘 𝗕𝗨𝗡𝗗𝗟𝗘𝗦 𝗠𝗘𝗡𝗨:</div>
+                            <div class="service-items">
+                                ▪vodacom SME<br>
+                                ▪yas SME<br>
+                                ▪airtel SME<br>
+                                ▪halotel SME
+                            </div>
+                            <div class="service-button" onclick="openOrderForm('SME Bundle')">SELECT</div>
+                        </div>
+                    </div>
+
+                    <!-- Papers -->
+                    <div class="service-container">
+                        <div class="service-image">
+                            <div class="service-slides" data-service="papers">
+                                <!-- Service slides will be inserted here via JavaScript -->
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-title">𝗣𝗔𝗣𝗘𝗥𝗦:</div>
+                            <div class="service-items">
+                                ▪A3 papers<br>
+                                ▪A4 papers<br>
+                                ▪A2 papers
+                            </div>
+                            <div class="service-button" onclick="openOrderForm('Papers')">SELECT</div>
+                        </div>
+                    </div>
+
+                    <!-- Custom services from admin panel will be inserted here -->
+                    <div id="custom-services-container"></div>
+                </div>
+
+                <!-- GET IN TOUCH Section -->
+                <div class="get-in-touch-container">
+                    <h2 class="text-2xl font-bold text-center mb-6" style="color: var(--purple);">GET IN TOUCH</h2>
+                    <div class="get-in-touch-form">
+                        <div class="form-group">
+                            <label class="form-label" for="contact-email">Email Address:</label>
+                            <input type="email" id="contact-email" class="form-input" placeholder="Enter your email address">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="contact-message">Message:</label>
+                            <textarea id="contact-message" class="form-input" rows="5" placeholder="Enter your message"></textarea>
+                        </div>
+                        <button id="send-email-button" class="send-email-button">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Contact Us Section -->
+                <div class="mt-10">
+                    <h2 class="text-2xl font-bold text-center mb-6" style="color: var(--purple);">ᑕOᑎTᗩᑕT ᑌՏ</h2>
+                    <div class="contact-container">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="text-center w-full">
+                                <div class="font-semibold">Email</div>
+                                <div class="contact-button">Chat</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="text-center w-full">
+                                <div class="font-semibold">Phone</div>
+                                <div class="contact-button">Chat</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="text-center w-full">
+                                <div class="font-semibold">WhatsApp</div>
+                                <div class="contact-button" onclick="openWhatsApp()">Chat</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notifications Tab -->
+            <div class="tab-content" id="notifications-content">
+                <h2 class="text-2xl font-bold mb-4" style="color: var(--purple);">Notifications</h2>
+                <div class="notifications-container">
+                    <!-- Notifications will be loaded here -->
+                </div>
+            </div>
+
+            <!-- Submitted Orders Tab -->
+            <div class="tab-content" id="orders-content">
+                <h2 class="text-2xl font-bold mb-4" style="color: var(--purple);">Submitted Orders</h2>
+                <div class="orders-container">
+                    <!-- Orders will be loaded here -->
+                </div>
+            </div>
+
+            <!-- Other Services Tab -->
+            <div class="tab-content" id="other-services-content">
+                <h2 class="text-2xl font-bold mb-4" style="color: var(--purple);">Other Services</h2>
+                <div class="other-services-container">
+                    <!-- Other services content will be loaded here -->
+                </div>
+            </div>
+
+            <!-- Developer Tab -->
+            <div class="tab-content" id="developer-content">
+                <!-- Developer Section -->
+                <section class="py-12 bg-gray-100 dark:bg-gray-800 text-center rounded-lg shadow-lg">
+                    <div class="container mx-auto px-4">
+                        <button class="bg-orange-600 text-black px-6 py-3 rounded-full shadow-lg hover:bg-orange-700 focus:outline-none developer-button neon-button neon-purple font-bold" id="developerBtn">
+                            <i class="fas fa-code mr-2"></i>
+                            Contact developer for web service
+                        </button>
+                    </div>
+                </section>
+                
+                <!-- Slideshow Section -->
+                <section class="py-12 bg-gray-100 dark:bg-gray-800 text-center mt-6 rounded-lg shadow-lg">
+                    <div class="container mx-auto px-4">
+                        <div class="slideshow-container">
+                            <img alt="Image of a programmer working on a laptop" class="slideshow-image active" height="400" src="https://storage.googleapis.com/a1aa/image/DBCRrZyBXzz0RXIsjxI1Q6A5LFGQL8dGAMhplnjXQ70.jpg" width="800"/>
+                            <img alt="Image of a programmer writing code on a desktop computer" class="slideshow-image" height="400" src="https://storage.googleapis.com/a1aa/image/jhzs0AOicDu4i_4NpuHFcuwGyu-ZNqn4Tp4HsUrdEVY.jpg" width="800"/>
+                            <img alt="Screenshot of a modern website design" class="slideshow-image" height="400" src="https://storage.googleapis.com/a1aa/image/mplgMWkSmRdhGcG9RFrkghFcuf7Z8iadKAAVHdmkUhU.jpg" width="800"/>
+                            <img alt="Screenshot of a responsive website layout" class="slideshow-image" height="400" src="https://storage.googleapis.com/a1aa/image/vczS7P_5r3i7M5FKrpBBBiRwfvQIvjcKfs1phMIUMsk.jpg" width="800"/>
+                            <img alt="Image of a modern computer setup with multiple monitors" class="slideshow-image" height="400" src="https://storage.googleapis.com/a1aa/image/S4fKMp0ZEpxu9j7NRmEtOTMxUM1eUhHMetdvDJHlimY.jpg" width="800"/>
+                            <img alt="Image of a sleek laptop on a desk" class="slideshow-image" height="400" src="https://storage.googleapis.com/a1aa/image/GF43dclOwn0JgdXUVBi33eCkKQRW_hEUQPrz1VP8NU8.jpg" width="800"/>
+                            <img alt="Image of a programmer debugging code" class="slideshow-image" height="400" src="https://storage.googleapis.com/a1aa/image/0TOgZ-gH4jpjSOzwpp1bSlilVSWKbN14yO-tgVzP46c.jpg" width="800"/>
+                            <img alt="Screenshot of a creative website design" class="slideshow-image" height="400" src="https://storage.googleapis.com/a1aa/image/fcIun0rqyTLqvnSzQHWHnBWmwbRspUkjijTB1556NaU.jpg" width="800"/>
+                            <img alt="Image of a high-end gaming computer" class="slideshow-image" height="400" src="https://storage.googleapis.com/a1aa/image/__LPqRMtLJqBOV4DXeZ6Bnx0rnkJJwWRmCzmWE3B2cE.jpg" width="800"/>
+                            <img alt="Image of a programmer collaborating with a team" class="slideshow-image" height="400" src="https://storage.googleapis.com/a1aa/image/r6xh3Nnjoi44U2l8z8oiQJzudiGn8-M6eX1mpubIT_s.jpg" width="800"/>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Developer Modal -->
+                <div class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50" id="developerModal">
+                    <div class="bg-white dark:bg-gray-800 rounded-lg p-6 max-w-md w-full modal-content">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-bold text-dark dark:text-white text-center w-full">𝗥𝗘𝗔𝗟 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥</h3>
+                            <button class="close-modal text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-gray-100">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-4 border-4 border-purple-600 bg-white">
+                                <img alt="Animated emoji of a technologist" class="w-full h-full object-cover" height="128" src="https://cdn.jsdelivr.net/gh/Tarikul-Islam-Anik/Animated-Fluent-Emojis/Emojis/People/Technologist.png" width="128">
+                                </img>
+                            </div>
+                            <div class="bg-purple-600 text-white py-2 px-4 rounded-md mb-2 neon-background">
+                                <h4 class="text-xl font-bold neon-text">𝐀𝐆𝐄𝐍𝐓_𝐑𝐄𝐙𝐎</h4>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">Web Developer & Designer</p>
+                            <div class="grid grid-cols-2 gap-3 mb-6">
+                                <a class="flex items-center justify-center bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 neon-button neon-green" href="https://wa.me/255746623724" target="_blank">
+                                    <i class="fab fa-whatsapp mr-2"></i>
+                                    WhatsApp
+                                </a>
+                                <a class="flex items-center justify-center bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 neon-button neon-blue" href="mailto:agentrezo.37@gmail.com">
+                                    <i class="fas fa-envelope mr-2"></i>
+                                    Email
+                                </a>
+                                <a class="flex items-center justify-center bg-black text-white py-2 px-4 rounded-md hover:bg-gray-800 neon-button neon-black" href="tel:+255766839045">
+                                    <i class="fas fa-phone mr-2"></i>
+                                    Call
+                                </a>
+                                <a class="flex items-center justify-center bg-yellow-500 text-white py-2 px-4 rounded-md hover:bg-yellow-600 neon-button neon-yellow" href="sms:+255766839045">
+                                    <i class="fas fa-sms mr-2"></i>
+                                    SMS
+                                </a>
+                            </div>
+                            <h5 class="text-lg font-bold text-dark dark:text-white mb-2">Follow Us</h5>
+                            <div class="flex justify-center space-x-4">
+                                <a class="text-pink-500 hover:text-pink-600 text-2xl neon-button border-2 border-gray-300 rounded-full p-2" href="#" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a class="text-black dark:text-white hover:text-gray-700 dark:hover:text-gray-300 text-2xl neon-button border-2 border-gray-300 rounded-full p-2" href="#" target="_blank">
+                                    <i class="fab fa-tiktok"></i>
+                                </a>
+                                <a class="text-blue-600 hover:text-blue-700 text-2xl neon-button border-2 border-gray-300 rounded-full p-2" href="#" target="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a class="text-green-500 hover:text-green-600 text-2xl neon-button border-2 border-gray-300 rounded-full p-2" href="#" target="_blank">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <audio id="romanticMusic" preload="auto" src="https://www.bensound.com/bensound-music/bensound-dreams.mp3"></audio>
+            </div>
+
+            <!-- Admin Panel Tab -->
+            <div class="tab-content" id="admin-content">
+                <h2 class="text-2xl font-bold mb-4" style="color: var(--purple);">Admin Panel</h2>
+                
+                <div id="admin-login" class="admin-section">
+                    <h3 class="text-xl font-bold mb-4">Login to Admin Panel</h3>
+                    <div class="form-group">
+                        <label class="form-label" for="admin-username">Username:</label>
+                        <input type="text" id="admin-username" class="form-input" placeholder="Enter username">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="admin-password">Password:</label>
+                        <input type="password" id="admin-password" class="form-input" placeholder="Enter password">
+                    </div>
+                    <button id="admin-login-button" class="admin-button">Login</button>
+                    <p id="admin-login-error" class="text-red-500 mt-2 hidden">Invalid username or password.</p>
+                </div>
+                
+                <div id="admin-dashboard" class="hidden">
+                    <div class="admin-section">
+                        <h3 class="text-xl font-bold mb-4">Edit Main Slideshow Text</h3>
+                        <div class="form-group">
+                            <label class="form-label" for="slideshow-text">Slideshow Text:</label>
+                            <input type="text" id="slideshow-text" class="form-input" placeholder="Enter slideshow text">
+                        </div>
+                        <button id="update-slideshow-text" class="admin-button">Update Text</button>
+                    </div>
+                    
+                    <div class="admin-section">
+                        <h3 class="text-xl font-bold mb-4">Upload Slideshow Images</h3>
+                        <p class="mb-2">Upload up to 7 images for the main slideshow.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                            <div class="slideshow-upload-item p-3 border rounded">
+                                <h4 class="font-semibold mb-2">Slide 1</h4>
+                                <input type="file" class="slideshow-image-input mb-2" data-index="0" accept="image/*">
+                                <button class="admin-button slideshow-upload-btn w-full">Upload</button>
+                                <div class="preview-container mt-2 hidden">
+                                    <img class="preview-image w-full" src="" alt="Slide preview">
+                                </div>
+                            </div>
+                            <div class="slideshow-upload-item p-3 border rounded">
+                                <h4 class="font-semibold mb-2">Slide 2</h4>
+                                <input type="file" class="slideshow-image-input mb-2" data-index="1" accept="image/*">
+                                <button class="admin-button slideshow-upload-btn w-full">Upload</button>
+                                <div class="preview-container mt-2 hidden">
+                                    <img class="preview-image w-full" src="" alt="Slide preview">
+                                </div>
+                            </div>
+                            <div class="slideshow-upload-item p-3 border rounded">
+                                <h4 class="font-semibold mb-2">Slide 3</h4>
+                                <input type="file" class="slideshow-image-input mb-2" data-index="2" accept="image/*">
+                                <button class="admin-button slideshow-upload-btn w-full">Upload</button>
+                                <div class="preview-container mt-2 hidden">
+                                    <img class="preview-image w-full" src="" alt="Slide preview">
+                                </div>
+                            </div>
+                            <div class="slideshow-upload-item p-3 border rounded">
+                                <h4 class="font-semibold mb-2">Slide 4</h4>
+                                <input type="file" class="slideshow-image-input mb-2" data-index="3" accept="image/*">
+                                <button class="admin-button slideshow-upload-btn w-full">Upload</button>
+                                <div class="preview-container mt-2 hidden">
+                                    <img class="preview-image w-full" src="" alt="Slide preview">
+                                </div>
+                            </div>
+                            <div class="slideshow-upload-item p-3 border rounded">
+                                <h4 class="font-semibold mb-2">Slide 5</h4>
+                                <input type="file" class="slideshow-image-input mb-2" data-index="4" accept="image/*">
+                                <button class="admin-button slideshow-upload-btn w-full">Upload</button>
+                                <div class="preview-container mt-2 hidden">
+                                    <img class="preview-image w-full" src="" alt="Slide preview">
+                                </div>
+                            </div>
+                            <div class="slideshow-upload-item p-3 border rounded">
+                                <h4 class="font-semibold mb-2">Slide 6</h4>
+                                <input type="file" class="slideshow-image-input mb-2" data-index="5" accept="image/*">
+                                <button class="admin-button slideshow-upload-btn w-full">Upload</button>
+                                <div class="preview-container mt-2 hidden">
+                                    <img class="preview-image w-full" src="" alt="Slide preview">
+                                </div>
+                            </div>
+                            <div class="slideshow-upload-item p-3 border rounded">
+                                <h4 class="font-semibold mb-2">Slide 7</h4>
+                                <input type="file" class="slideshow-image-input mb-2" data-index="6" accept="image/*">
+                                <button class="admin-button slideshow-upload-btn w-full">Upload</button>
+                                <div class="preview-container mt-2 hidden">
+                                    <img class="preview-image w-full" src="" alt="Slide preview">
+                                </div>
+                            </div>
+                        </div>
+                        <button id="apply-slideshow-images" class="admin-button">Apply All Images to Slideshow</button>
+                    </div>
+                    
+                    <div class="admin-section">
+                        <h3 class="text-xl font-bold mb-4">Upload Service Category Images</h3>
+                        
+                        <div class="service-upload-item mb-4">
+                            <h4 class="font-semibold mb-2">Drawing Boards</h4>
+                            <input type="file" id="drawing-boards-images" class="mb-2" accept="image/*">
+                            <button id="upload-drawing-boards" class="admin-button">Upload Image</button>
+                            <div class="preview-container mt-2" id="drawing-boards-preview"></div>
+                        </div>
+                        
+                        <div class="service-upload-item mb-4">
+                            <h4 class="font-semibold mb-2">Mathematical Set</h4>
+                            <input type="file" id="mathematical-set-images" class="mb-2" accept="image/*">
+                            <button id="upload-mathematical-set" class="admin-button">Upload Image</button>
+                            <div class="preview-container mt-2" id="mathematical-set-preview"></div>
+                        </div>
+                        
+                        <div class="service-upload-item mb-4">
+                            <h4 class="font-semibold mb-2">Routers</h4>
+                            <input type="file" id="routers-images" class="mb-2" accept="image/*">
+                            <button id="upload-routers" class="admin-button">Upload Image</button>
+                            <div class="preview-container mt-2" id="routers-preview"></div>
+                        </div>
+                        
+                        <div class="service-upload-item mb-4">
+                            <h4 class="font-semibold mb-2">SIM Card Registration</h4>
+                            <input type="file" id="sim-cards-images" class="mb-2" accept="image/*">
+                            <button id="upload-sim-cards" class="admin-button">Upload Image</button>
+                            <div class="preview-container mt-2" id="sim-cards-preview"></div>
+                        </div>
+                        
+                        <div class="service-upload-item mb-4">
+                            <h4 class="font-semibold mb-2">SME Bundles Menu</h4>
+                            <input type="file" id="sme-bundles-images" class="mb-2" accept="image/*">
+                            <button id="upload-sme-bundles" class="admin-button">Upload Image</button>
+                            <div class="preview-container mt-2" id="sme-bundles-preview"></div>
+                        </div>
+                        
+                        <div class="service-upload-item mb-4">
+                            <h4 class="font-semibold mb-2">Papers</h4>
+                            <input type="file" id="papers-images" class="mb-2" accept="image/*">
+                            <button id="upload-papers" class="admin-button">Upload Image</button>
+                            <div class="preview-container mt-2" id="papers-preview"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-section">
+                        <h3 class="text-xl font-bold mb-4">Manage Other Services Content</h3>
+                        <div class="form-group">
+                            <label class="form-label" for="other-service-title">Title:</label>
+                            <input type="text" id="other-service-title" class="form-input" placeholder="Enter title">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="other-service-description">Description:</label>
+                            <textarea id="other-service-description" class="form-input" rows="4" placeholder="Enter description"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Upload Media:</label>
+                            <input type="file" id="other-service-media" accept="image/,video/">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="other-service-items">Service Items (one per line):</label>
+                            <textarea id="other-service-items" class="form-input" rows="4" placeholder="Enter service items, one per line with ▪ at the beginning"></textarea>
+                        </div>
+                        <div class="service-visibility-toggle">
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="show-on-main-page">
+                                <span class="toggle-slider"></span>
+                            </label>
+                            <span>Show on main page</span>
+                        </div>
+                        <button id="add-other-service" class="admin-button">Add Service</button>
+                    </div>
+                    
+                    <div class="admin-section">
+                        <h3 class="text-xl font-bold mb-4">Add Notification</h3>
+                        <div class="form-group">
+                            <label class="form-label" for="notification-message">Message:</label>
+                            <textarea id="notification-message" class="form-input" rows="4" placeholder="Enter notification message"></textarea>
+                        </div>
+                        <button id="add-notification" class="admin-button">Add Notification</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Owner Panel Tab -->
+            <div class="tab-content" id="owner-content">
+                <h2 class="text-2xl font-bold mb-4" style="color: var(--purple);">Owner Panel</h2>
+                
+                <div id="owner-login" class="admin-section">
+                    <h3 class="text-xl font-bold mb-4">Login to Owner Panel</h3>
+                    <div class="form-group">
+                        <label class="form-label" for="owner-password">Owner Password:</label>
+                        <input type="password" id="owner-password" class="form-input" placeholder="Enter owner password">
+                    </div>
+                    <button id="owner-login-button" class="admin-button">Login</button>
+                    <p id="owner-login-error" class="text-red-500 mt-2 hidden">Invalid password.</p>
+                </div>
+                
+                <div id="owner-dashboard" class="hidden">
+                    <div class="admin-section">
+                        <h3 class="text-xl font-bold mb-4">Edit Admin Panel Password</h3>
+                        <div class="form-group">
+                            <label class="form-label" for="admin-new-username">New Admin Username:</label>
+                            <input type="text" id="admin-new-username" class="form-input" placeholder="Enter new admin username">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="admin-new-password">New Admin Password:</label>
+                            <input type="password" id="admin-new-password" class="form-input" placeholder="Enter new admin password">
+                        </div>
+                        <button id="update-admin-credentials" class="admin-button">Update Credentials</button>
+                    </div>
+                    
+                    <div class="admin-section">
+                        <h3 class="text-xl font-bold mb-4">Upload HTML Code for Developer Page</h3>
+                        <div class="form-group">
+                            <label class="form-label" for="developer-html-code">HTML Code:</label>
+                            <textarea id="developer-html-code" class="form-input" rows="10" placeholder="Enter HTML code"></textarea>
+                        </div>
+                        <button id="update-developer-code" class="admin-button">Update Code</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Form Modal -->
+    <div id="order-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal('order-modal')">×</span>
+            <h2 class="text-xl font-bold mb-4" style="color: var(--purple);">ENTER YOUR DETAILS</h2>
+            
+            <div class="form-group">
+                <label class="form-label" for="full-name">Full Name:</label>
+                <input type="text" id="full-name" class="form-input" placeholder="Enter your full name">
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label" for="phone-number">Phone Number:</label>
+                <input type="text" id="phone-number" class="form-input" placeholder="Enter your phone number">
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label" for="location">Select Location:</label>
+                <select id="location" class="form-select" onchange="locationChanged()">
+                    <option value="">Select your location</option>
+                    <option value="Udom">Udom</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            
+            <!-- Udom specific fields (hidden by default) -->
+            <div id="udom-fields" class="hidden">
+                <div class="form-group">
+                    <label class="form-label" for="college">College/School/Institute:</label>
+                    <input type="text" id="college" class="form-input" placeholder="Enter your college, school or institute">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="block-number">Block Number:</label>
+                    <input type="text" id="block-number" class="form-input" placeholder="Enter your block number">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="room-number">Room Number:</label>
+                    <input type="text" id="room-number" class="form-input" placeholder="Enter your room number">
+                </div>
+            </div>
+            
+            <!-- Other location field (hidden by default) -->
+            <div id="other-location" class="hidden">
+                <div class="form-group">
+                    <label class="form-label" for="other-location-detail">Location Details:</label>
+                    <input type="text" id="other-location-detail" class="form-input" placeholder="Enter your location details">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label" for="service-type">Select Service:</label>
+                <select id="service-type" class="form-select" onchange="serviceTypeChanged()">
+                    <option value="">Select your service</option>
+                    <option value="Drawing board (new)">Drawing board (new)</option>
+                    <option value="Drawing board (used)">Drawing board (used)</option>
+                    <option value="Mathematical set">Mathematical set</option>
+                    <option value="Airtel router">Airtel router</option>
+                    <option value="Vodacom router">Vodacom router</option>
+                    <option value="Yas router">Yas router</option>
+                    <option value="Pocket wi-fi">Pocket wi-fi</option>
+                    <option value="A3 papers">A3 papers</option>
+                    <option value="A4 papers">A4 papers</option>
+                    <option value="A2 papers">A2 papers</option>
+                </select>
+            </div>
+            
+            <div id="amount-field" class="form-group hidden">
+                <label class="form-label" for="amount">Amount:</label>
+                <input type="number" id="amount" class="form-input" placeholder="Enter amount needed">
+            </div>
+            
+            <button id="share-location-btn" class="location-button">
+                <i class="fas fa-map-marker-alt"></i> Share live Location
+            </button>
+            <p id="location-status" class="mt-2 text-sm hidden"></p>
+            
+            <button class="submit-button mt-4" onclick="submitOrder()">Submit Order</button>
+        </div>
+    </div>
+
+    <!-- Other Service Order Form Modal -->
+    <div id="other-service-order-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal('other-service-order-modal')">×</span>
+            <h2 class="text-xl font-bold mb-4" style="color: var(--purple);">ENTER YOUR DETAILS</h2>
+            <h3 id="other-service-order-title" class="text-lg font-semibold mb-4"></h3>
+            
+            <div class="form-group">
+                <label class="form-label" for="other-service-full-name">Full Name:</label>
+                <input type="text" id="other-service-full-name" class="form-input" placeholder="Enter your full name">
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label" for="other-service-phone-number">Phone Number:</label>
+                <input type="text" id="other-service-phone-number" class="form-input" placeholder="Enter your phone number">
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label" for="other-service-location">Select Location:</label>
+                <select id="other-service-location" class="form-select" onchange="otherServiceLocationChanged()">
+                    <option value="">Select your location</option>
+                    <option value="Udom">Udom</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            
+            <!-- Udom specific fields (hidden by default) -->
+            <div id="other-service-udom-fields" class="hidden">
+                <div class="form-group">
+                    <label class="form-label" for="other-service-college">College/School/Institute:</label>
+                    <input type="text" id="other-service-college" class="form-input" placeholder="Enter your college, school or institute">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="other-service-block-number">Block Number:</label>
+                    <input type="text" id="other-service-block-number" class="form-input" placeholder="Enter your block number">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="other-service-room-number">Room Number:</label>
+                    <input type="text" id="other-service-room-number" class="form-input" placeholder="Enter your room number">
+                </div>
+            </div>
+            
+            <!-- Other location field (hidden by default) -->
+            <div id="other-service-other-location" class="hidden">
+                <div class="form-group">
+                    <label class="form-label" for="other-service-other-location-detail">Location Details:</label>
+                    <input type="text" id="other-service-other-location-detail" class="form-input" placeholder="Enter your location details">
+                </div>
+            </div>
+            
+            <div id="other-service-amount-field" class="form-group">
+                <label class="form-label" for="other-service-amount">Amount:</label>
+                <input type="number" id="other-service-amount" class="form-input" placeholder="Enter amount needed">
+            </div>
+            
+            <button id="other-service-share-location-btn" class="location-button">
+                <i class="fas fa-map-marker-alt"></i> Share live Location
+            </button>
+            <p id="other-service-location-status" class="mt-2 text-sm hidden"></p>
+            
+            <input type="hidden" id="other-service-id">
+            <button class="submit-button mt-4" onclick="submitOtherServiceOrder()">Submit Order</button>
+        </div>
+    </div>
+
+    <!-- Comment Modal -->
+    <div id="comment-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal('comment-modal')">×</span>
+            <h2 class="text-xl font-bold mb-4" style="color: var(--purple);">Add a Comment</h2>
+            
+            <div class="form-group">
+                <label class="form-label" for="commenter-name">Your Name:</label>
+                <input type="text" id="commenter-name" class="form-input" placeholder="Enter your name">
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label" for="comment-text">Comment:</label>
+                <textarea id="comment-text" class="form-input" rows="4" placeholder="Enter your comment"></textarea>
+            </div>
+            
+            <button id="submit-comment" class="admin-button">Submit Comment</button>
+        </div>
+    </div>
+    
+    <!-- Validation Error Modal -->
+    <div id="validation-modal" class="modal">
+        <div class="modal-content bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-xl font-bold mb-4 text-red-600 text-center">Please complete all the required fields</h2>
+            <div class="flex justify-center">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="closeModal('validation-modal')">OK</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Password Error Modal -->
+    <div id="password-modal" class="modal">
+        <div class="modal-content bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-xl font-bold mb-4 text-red-600 text-center">Incorrect password</h2>
+            <div class="flex justify-center">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="closeModal('password-modal')">Try Again</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container mx-auto">
+            <p>© 2025 𝐀𝐋𝐅𝐎𝐍𝐂𝐄 𝐒𝐄𝐑𝐕𝐈𝐂𝐄𝐒. All rights reserved.</p>
+            <p class="mt-2">Providing quality services to university students.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
